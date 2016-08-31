@@ -1,0 +1,27 @@
+
+<input type="button" value="INSERT" (click)="insert_func()"/>
+<pre>
+  {{ insert }}
+</pre>
+
+<input type="button" value="SELECT" (click)="select_func()"/>
+<pre>
+  {{ select }}
+</pre>
+
+<input type="text" id="updateid"
+   [(ngModel)]="update_id"
+   />
+<input type="button" value="UPDATE"
+  (click)="update_func()" />
+<pre>
+  {{ update }}
+</pre>
+
+<input type="text" id="deleteid"
+  [(ngModel)]="delete_id"/>
+<input type="button" value="DELETE"
+  (click)="delete_func()"/>
+<pre>
+  {{ delete }}
+</pre>
